@@ -1,9 +1,40 @@
 .files {
     background-color: $color-dark-blue;
-    padding: 3rem;
-    width: 30rem;
-    height: 100%;
+    padding: 4rem;
+    width: 34rem;
     margin-right: 3rem;
     border-radius: 12px;
     border-top-right-radius: 100px;
+
+    &__logo {
+        display: block;
+        width: 13rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__icons {
+        display: flex;
+    }
+
+    &__icon-link {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__icon-box {
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: $color-very-dark-blue;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-very-dark-blue;
+        transition: all .3s;
+
+        &:hover {
+            border: 1px solid #687ED4;
+        }
+    }
 }
