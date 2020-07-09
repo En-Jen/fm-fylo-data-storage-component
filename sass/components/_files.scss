@@ -35,7 +35,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all .3s;
+        transition: border .3s;
 
         &:hover {
             border: 1px solid $color-file-icon;

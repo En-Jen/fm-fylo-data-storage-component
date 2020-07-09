@@ -14,7 +14,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         border-bottom: 1px solid transparent;
-        transition: all .3s;
+        transition: border-bottom .3s;
 
         &:hover {
             border-bottom: 1px solid $color-pink-dark;
