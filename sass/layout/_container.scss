@@ -1,12 +1,4 @@
 .container {
-    padding: 4rem;
-    /*display: grid;
-    grid-template-columns: .35fr .65fr;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    grid-gap: 2rem;*/
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -14,4 +6,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: $bp-750) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    @media only screen and (max-width: $bp-620) {
+        width: 65%;
+    }
+
+    @media only screen and (max-width: $bp-480) {
+        width: 85%;
+    }
 }

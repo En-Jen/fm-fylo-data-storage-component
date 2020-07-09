@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="files">
-      <img src="img/logo.svg" alt="Fylo logo" class="files__logo">
-      <div class="files__icons">
-        <a href="#" class="files__icon-link">
-          <div class="files__icon-box">
-            <img src="img/icon-document.svg" alt="Document icon" class="files__icon">
-          </div>
-        </a>
-        <a href="#" class="files__icon-link">
-          <div class="files__icon-box">
-            <img src="img/icon-folder.svg" alt="Folder icon" class="files__icon">
-          </div>
-        </a>
-        <a href="#" class="files__icon-link">
-          <div class="files__icon-box">
-            <img src="img/icon-upload.svg" alt="Upload icon" class="files__icon">
-          </div>
-        </a>
+  <body>
+    <div class="container">
+      <div class="files">
+        <img src="img/logo.svg" alt="Fylo logo" class="files__logo">
+        <div class="files__icons">
+          <a href="#" class="files__icon-link">
+            <div class="files__icon-box">
+              <img src="img/icon-document.svg" alt="Document icon" class="files__icon">
+            </div>
+          </a>
+          <a href="#" class="files__icon-link">
+            <div class="files__icon-box">
+              <img src="img/icon-folder.svg" alt="Folder icon" class="files__icon">
+            </div>
+          </a>
+          <a href="#" class="files__icon-link">
+            <div class="files__icon-box">
+              <img src="img/icon-upload.svg" alt="Upload icon" class="files__icon">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="storage">
+        <p class="storage__text">
+          You’ve used <span class="storage__text--bold">815 GB</span> of your storage
+        </p>
+        <div class="storage__track">
+          <span class="storage__bar"></span>
+        </div>
+        <div class="storage__min-max">
+          <p class="storage__min">0 GB</p>
+          <p class="storage__max">1000 GB</p>
+        </div>      
+        <div class="storage__free-box">
+          <span class="storage__free--big">185</span>
+          <span class="storage__free--small">GB Left</span>
+        </div>
       </div>
     </div>
 
-    <div class="storage">
-      <p class="storage__text">
-        You’ve used <span class="storage__text--bold">815 GB</span> of your storage
-      </p>
-      <div class="storage__track">
-        <span class="storage__bar"></span>
-      </div>
-      <div class="storage__min-max">
-        <p class="storage__min">0 GB</p>
-        <p class="storage__max">1000 GB</p>
-      </div>      
-      <div class="storage__free-box">
-        <span class="storage__free--big">185</span>
-        <span class="storage__free--small">GB Left</span>
-      </div>
+    <div class="bg">
+      <picture>
+        <source srcset="img/bg-mobile.png" media="(max-width: 46.875em)" class="bg__img">
+        <img srcset="img/bg-desktop.png" alt="Background image" src="img/bg-desktop.png" class="bg__img">
+      </picture>
     </div>
-  </div>
 
-  <div class="bg">
-    <picture>
-      <source srcset="img/bg-mobile.png" media="(max-width: 37.5em)" class="bg__img">
-      <img srcset="img/bg-desktop.png" alt="Background image" src="img/bg-desktop.png" class="bg__img">
-    </picture>
-  </div>
-
-  
-  <footer class="footer">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__link">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/En-Jen" target="_blank" class="footer__link">Jen Speak</a>.
-  </footer>
-</body>
+    
+    <footer class="footer">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__link">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/En-Jen" target="_blank" class="footer__link">Jen Speak</a>.
+    </footer>
+  </body>
 </html>

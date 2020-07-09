@@ -9,6 +9,14 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
+
+    @media only screen and (max-width: $bp-480) {
+        font-size: 57%;
+    }
+
+    @media only screen and (max-width: $bp-340) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -20,4 +28,9 @@ body {
     height: 100vh;
     width: 100vw;
     position: relative;
+
+    @media only screen and (max-width: $bp-750) {
+        background-image: url(../img/bg-mobile.png);
+        background-size: cover;
+    }
 }

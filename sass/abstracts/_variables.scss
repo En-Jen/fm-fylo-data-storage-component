@@ -3,6 +3,7 @@ $color-pink-light: hsl(6, 100%, 80%);
 $color-pink-dark: hsl(335, 100%, 65%);
 
 $color-pale-blue: hsl(243, 100%, 93%);
+$color-file-icon: hsl(228, 56%, 62%);
 $color-grayish-blue: hsl(229, 7%, 55%);
 $color-dark-blue: hsl(228, 56%, 26%);
 $color-medium-blue: hsl(228, 59%, 18%);
@@ -13,3 +14,9 @@ $font-family: 'Raleway', sans-serif;
 
 // FONT SIZE
 $default-font-size: 1.4rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-750: 46.875em; // 750px
+$bp-620: 38.75em; // 620px
+$bp-480: 30em; // 480px
+$bp-340: 21.25em; // 340px

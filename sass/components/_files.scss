@@ -1,10 +1,15 @@
 .files {
+    flex: 0 0 57%;
     background-color: $color-dark-blue;
     padding: 4rem;
-    width: 34rem;
     margin-right: 3rem;
     border-radius: 12px;
     border-top-right-radius: 100px;
+
+    @media only screen and (max-width: $bp-750) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
 
     &__logo {
         display: block;
@@ -34,7 +39,7 @@
         transition: all .3s;
 
         &:hover {
-            border: 1px solid #687ED4;
+            border: 1px solid $color-file-icon;
         }
     }
 }
